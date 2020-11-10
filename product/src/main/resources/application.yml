@@ -36,15 +36,15 @@ spring:
     default-property-inclusion: non_null
   data:
     mongodb:
-      uri: mongodb://root:mongodb_root@121.36.167.128:27017
-      password: mongodb_root
-      database: r-mall
-      username: mongodb_root
+    uri: mongodb://mongodb 地址
+      password: mongodb 密码
+      database: 库名
+      username: mongodb 用户名
 dubbo:
   application:
     name: product-provider
   registry:
-    address: nacos://47.102.137.205
+    address: nacos 地址
     port: 8848
   protocol:
     name: dubbo
