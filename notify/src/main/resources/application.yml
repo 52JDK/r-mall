@@ -10,9 +10,9 @@ spring:
     username: root
     password: 123456
   redis:
-    host: 47.102.137.205
+    host: redis地址
     port: 6379
-    password: robot_sh_redis
+    password: redis密码
     database: 0
     timeout: 5000
     jedis:
@@ -34,13 +34,13 @@ dubbo:
   application:
     name: r-mall
   registry:
-    address: nacos://47.102.137.205
+    address: nacos 地址
     port: 8848
   protocol:
     serialization: kryo
 nacos:
   config:
-    server-addr: 47.102.137.205:8848
+    server-addr: nacos 地址
 
 
 logging:

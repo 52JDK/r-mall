@@ -347,6 +347,8 @@ public class OrderServiceImpl implements OrderService {
         List<OrderListResponse> orderListResponse = new ArrayList<>();
         //pageHelper 要用这种方式获取总数
         Page page = PageHelper.startPage(request.getPageNumber(), request.getPageSize());
+
+
         List<Order> orders = orderDao.orderListByStatus(uid, request.getStatus());
         if (CollectionUtils.isEmpty(orders)) {
             return Message.success(ErrorType.SUCCESS);
